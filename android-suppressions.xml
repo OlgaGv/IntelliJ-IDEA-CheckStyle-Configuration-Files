@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Puppy Crawl//DTD Suppressions 1.1//EN" "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<!--
+    Checkstyle-Suppression: Google Android Suppression
+    URL: https://gist.github.com/ksoichiro/1697214
+-->
+
+<suppressions>
+  <!-- Turn off all checks for some libraries. -->
+  <suppress checks="." files="com[\\/]google[\\/]..*.java" />
+  <!-- Turn off header checks for some libraries. -->
+  <suppress checks="Header" files=".*[\\/]android[\\/]fastroid[\\/].*\.java"/>
+  <!-- Allows public fields in entity or form packages. -->
+  <suppress checks="VisibilityModifier" files=".*[\\/](entity|form)[\\/].*\.java"/>
+  <!-- Allows magic numbers in entity or form packages. (for "fastroid") -->
+  <suppress checks="MagicNumber" files=".*[\\/](entity|form)[\\/].*\.java"/>
+  <suppress checks="[a-zA-Z0-9]*" files="R\.java" />
+  <suppress checks="." files=".*\.properties" />
+</suppressions>
